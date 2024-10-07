@@ -1,0 +1,16 @@
+# git clone https://github.com/xuebinqin/U-2-Net.git
+# download u2net.pth from https://drive.google.com/file/d/1-B1aghOSgv0zmCDwIg5rQfFLG6IB87Sk/view?usp=drive_link
+torch
+torchvision
+pillow
+opencv-python
+matplotlib
+numpy<2
+flask
+flask-cors
+gunicorn
+
+# creating a new env
+# python3 -m venv new_env
+# source new_env/bin/activate  # Linux/Mac için
+# .\yeni_ortam\Scripts\activate   # Windows için

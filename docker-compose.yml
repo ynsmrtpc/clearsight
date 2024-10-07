@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  clearsightapi:
+    image: clearsightapi
+    build:
+      context: .
+      dockerfile: ./Dockerfile.api
+    ports:
+      - 5002:5002
+
+  clearsightfront:
+    image: clearsightfront
+    build:
+      context: .
+      dockerfile: ./Dockerfile.web
+    environment:
+      NODE_ENV: development
+    ports:
+      - 2800:2800
+    depends_on:
+      - clearsightapi
