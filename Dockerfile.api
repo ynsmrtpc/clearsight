@@ -1,5 +1,5 @@
 # For more information, please refer to https://aka.ms/vscode-docker-python
-FROM python:3-slim
+FROM python:3.10-slim
 
 EXPOSE 5002
 
@@ -10,7 +10,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y libgl1 libglib2.0-0
+RUN apt-get update && apt-get install -y libgl1 libglib2.0-0 && apt-get install -y build-essential
 
 # Install pip requirements
 COPY ./api/requirements.txt .
