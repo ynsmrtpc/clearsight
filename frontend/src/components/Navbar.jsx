@@ -1,4 +1,3 @@
-import { FaGithub, FaLinkedin, FaRegImage } from 'react-icons/fa';
 import Linkedin from './Linkedin';
 import Github from './Github';
 
